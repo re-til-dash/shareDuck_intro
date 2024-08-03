@@ -142,7 +142,6 @@ img {
 }
 
 h1 {
-    font-family: SUIT;
     font-size: 74px;
     font-style: normal;
     font-weight: 900;
@@ -288,7 +287,6 @@ h3 {
 
 .section3 p.bold {
     color: var(--color-vio-700, #4A0A60);
-    font-family: SUIT;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -299,7 +297,6 @@ h3 {
 
 .section3 p.para {
     color: var(--color-vio-600, #5A1771);
-    font-family: SUIT;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -316,7 +313,6 @@ h3 {
 .section4 p.strong {
     color: var(--color-vio-900, #280036);
     text-align: center;
-    font-family: SUIT;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
