@@ -258,6 +258,10 @@ h3 {
     max-width: 1311px;
 }
 
+.section3>header {
+    text-align: center;
+}
+
 .section3>div.wrap {
     display: flex;
 }
@@ -272,7 +276,7 @@ h3 {
     margin-right: 90px;
 }
 
-.section3>div.wrap p {
+.section3 p {
     color: var(--color-wb-600, #575458);
     font-size: 16px;
     font-weight: 700;
@@ -282,7 +286,7 @@ h3 {
     margin: 32px 0;
 }
 
-.section3>div.wrap p.bold {
+.section3 p.bold {
     color: var(--color-vio-700, #4A0A60);
     font-family: SUIT;
     font-size: 32px;
@@ -293,7 +297,7 @@ h3 {
     letter-spacing: -0.704px;
 }
 
-.section3>div.wrap p.para {
+.section3 p.para {
     color: var(--color-vio-600, #5A1771);
     font-family: SUIT;
     font-size: 24px;
