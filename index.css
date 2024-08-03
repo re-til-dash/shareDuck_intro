@@ -1,43 +1,211 @@
 :root {
-    --color-vio-999: #280036
+    --color-vio-999: #280036;
+    --color-vio-500: #A86EBC;
+    --color-vio-300: #CEA9DB;
+    --color-vio-000: #FAEFFE;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    font-family: SUIT;
+    font-size: 1rem;
+    font-style: normal;
+
+    color: var(--color-vio-900, #280036);
+
+}
+
+body {
+    margin: auto;
+    max-width: 1378px;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 2231px;
+    height: 2231px;
+    border-radius: 2231px;
+    background: linear-gradient(180deg, #FC71FF 0%, #FAEFFE 100%);
+    filter: blur(400px);
+    top: calc(-2231px / 2 - 500px);
+    left: calc(-2231px / 2);
+    z-index: -99;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    width: 2231px;
+    height: 2231px;
+    border-radius: 1744px;
+    top: calc(2231px / 2);
+    background: linear-gradient(180deg, #E18CFF 0%, rgba(255, 221, 196, 0.50) 100%);
+    filter: blur(400px);
+    top: calc(-2231px / 2 - 500px);
+    right: calc(-2231px / 2);
+    z-index: -99;
+}
+
+header,
+main,
+footer,
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+section {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+
+button {
+    width: fit-content;
+    border: 1px solid black;
+    border-radius: 9999px;
+    padding: 14px;
+    background-color: white;
+    margin: auto;
+}
+
+button#download {
+    padding: 32px 54px;
+    border-radius: 99px;
+    border: 1px solid var(--color-vio-300);
+    background: #FFF;
+    color: #000;
+
+    /* typo/typo-head-36 */
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px;
+    /* 133.333% */
+    letter-spacing: -0.72px;
+}
+
+button#download::before {
+    content: url(./img/downloadIcon.svg);
+    margin-right: 1em;
+}
+
+img {
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    object-position: center;
+}
+
+.block {
+    display: block;
+}
+
+h1 {
+    font-family: SUIT;
+    font-size: 74px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 74px;
+    /* 100% */
+    letter-spacing: -1.628px;
+}
+
+.title {
+    font-size: 74px;
+    color: var(--color-vio-900, #280036);
+    font-weight: 900;
+    line-height: 74px;
+    /* 100% */
+    letter-spacing: -1.628px;
 }
 
 .intro {
     color: var(--color-vio-900, #280036);
-    font-family: SUIT;
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
     line-height: 140%;
     /* 56px */
     letter-spacing: -0.88px;
+    margin-bottom: 58px;
+}
+
+.chat {
+    display: flex;
+    margin-bottom: 32px;
+    padding: 32px;
+    border-radius: 14.38px;
+    width: fit-content;
+    position: relative;
+    font-size: 44px;
 }
 
 .chat.right {
-    display: flex;
-    padding: 32px;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
+    margin-left: auto;
+    margin-right: 32px;
+    justify-content: right;
+    align-items: flex-start;
+    background: var(--color-vio-500);
 }
 
 .chat.left {
-    display: flex;
-    padding: 14.38px 0px;
-    justify-content: center;
+    margin-left: 32px;
+    justify-content: left;
     align-items: flex-end;
+    background: var(--color-vio-000);
 }
 
 .chat.right::after {
     content: url(./img/rightTail.svg);
+    position: absolute;
+    width: 32px;
+    height: 58px;
+    right: -30px;
+    bottom: 8px;
 }
 
 .chat.left::before {
     content: url(./img/leftTail.svg);
+    position: absolute;
+    width: 32px;
+    height: 58px;
+    left: -29px;
+    bottom: 8px;
+}
+
+.section1>div.wrap {
+    margin-bottom: 65px;
+}
+
+.section1>div.wrap> :first-child {
+    margin: auto;
+}
+
+.section1>div.wrap>div.image {
+    flex-basis: 70%;
+    flex-shrink: 0;
+    background-image: url(./img/MacBookAir.png);
+    background-position: center;
+    height: 600px;
+}
+
+.section2>div.wrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 1311px;
+}
+
+.section3>div.wrap {
+    display: flex;
+
 }

@@ -22,4 +22,5 @@ const os = getOS();
 
 window.addEventListener("load", () => {
   downloadButton.textContent = `Download for ${os}`;
+  
 });
