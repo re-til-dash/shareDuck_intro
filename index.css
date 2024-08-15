@@ -23,13 +23,12 @@
 
 
 body {
-    height: 100%;
     position: relative;
     overflow-x: hidden;
 }
 
 body::before {
-    content: url(./img/shareduck_landing_background_up.png) cover no-repeat;
+    content: url(./img/shareduck_landing_background_up.png);
     position: absolute;
     width: 100vw;
     top: 0;
@@ -45,6 +44,7 @@ body::after {
     left: 0;
     right: 0;
     z-index: -99;
+    margin-bottom: 0;
 }
 
 header,
