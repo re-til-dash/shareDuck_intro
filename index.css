@@ -21,37 +21,29 @@
 
 }
 
+
 body {
-    margin: auto;
-    max-width: 1378px;
+    height: 100%;
     position: relative;
     overflow-x: hidden;
 }
 
 body::before {
-    content: "";
+    content: url(./img/shareduck_landing_background_up.png) cover no-repeat;
     position: absolute;
-    width: 2231px;
-    height: 2231px;
-    border-radius: 2231px;
-    background: linear-gradient(180deg, #FC71FF 0%, #FAEFFE 100%);
-    filter: blur(400px);
-    top: calc(-2231px / 2 - 500px);
-    left: calc(-2231px / 2);
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: -99;
 }
 
 body::after {
-    content: "";
+    content: url(./img/shareduck_landing_background_down.png);
     position: absolute;
-    width: 2231px;
-    height: 2231px;
-    border-radius: 1744px;
-    top: calc(2231px / 2);
-    background: linear-gradient(180deg, #E18CFF 0%, rgba(255, 221, 196, 0.50) 100%);
-    filter: blur(400px);
-    top: calc(-2231px / 2 - 500px);
-    right: calc(-2231px / 2);
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: -99;
 }
 
@@ -60,6 +52,7 @@ main,
 footer,
 section {
     width: 100%;
+    max-width: 1378px;
     display: flex;
     flex-direction: column;
     margin: auto;
